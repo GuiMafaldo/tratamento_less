@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+@media (max-width:767px) {
+  body {
+    background-color: blue;
+    width: 100%;
+  }
+}
+@media (min-width:768px) and (max-width:1024px) {
+  body {
+    width: 100%;
+    background-color: red;
+  }
+}
+header {
+  background-color: darkorange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px;
+  margin-bottom: 32px;
+}
+header .branding img {
+  border-radius: 10%;
+  margin-bottom: 16px;
+}
+header .menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+header .menu-item {
+  list-style: none;
+}
+header .menu-item-link {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: -32px;
+}
+section.products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section .products-item {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+section .products-item .imagem-edit {
+  margin: 16px;
+  border-radius: 30%;
+  margin-left: 80px;
+}
+section .products-item h4 {
+  color: darkorange;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 22px;
+}
+section .products-item p {
+  color: white;
+  margin-bottom: 15px;
+}
+section .products-item a {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 8px;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+}
+section h2 {
+  margin-top: 18px;
+  text-align: center;
+  background-color: darkorange;
+  color: white;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+section h2:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: darkorange;
+  border: none;
+}
+.roda-pe {
+  background-color: darkorange;
+  height: 60px;
+}
+.roda-pe .products {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.roda-pe .products-item {
+  margin-top: 10px;
+  margin-right: 10px;
+}

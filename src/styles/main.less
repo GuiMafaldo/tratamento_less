@@ -1,0 +1,146 @@
+@import "variaveis/cores";
+@import "mapas.less";
+
+
+@breakePointeTablet: ~ "(min-width:768px) and (max-width:1024px)";
+@breakPointeMobile: ~ "(max-width:767px)";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: @fontTitles;
+}
+
+body {
+
+    @media @breakPointeMobile {
+        background-color: blue;
+        width: 100%;
+    }
+
+    @media @breakePointeTablet {
+        width: 100%;
+        background-color: red;
+    }
+}
+
+    header{
+        background-color: #color[backgroundColor];
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding:22px;
+        margin-bottom: 32px;
+
+        .branding {
+            & img {
+                border-radius: 10%;
+                margin-bottom: 16px;
+            }
+        }
+        
+
+        .menu{
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+        list-style: none;
+        
+        &-item {
+            list-style: none;
+        
+            &-link {
+                color: @colorLinks;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+}
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: @backgroundSection;
+    margin-top: -32px;
+    
+
+    &.products {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+    .products-item {
+        display: block;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+
+        .imagem-edit {
+            margin:16px;
+            border-radius: 30%;
+            margin-left: 80px;
+        }
+
+        h4 {
+            color: @colorH4;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 22px;
+        }
+
+        p {
+            color: @colorParagrafos;
+            margin-bottom: 15px;
+        }
+
+        a {
+            background-color: @backgroundSection;
+            padding: 8px;
+            color: @colorLinks;
+            font-weight: bold;
+            border-radius: 30px;
+            text-decoration: none;
+        }
+}
+
+    h2 {
+        margin-top: 18px;
+        text-align: center;
+        background-color:  @headerColor;
+        color: @colorH2;
+        border: 2px solid @colorBorder;
+        border-radius: 20px;
+
+        &:hover {
+            cursor: pointer;
+            background-color: @colorSectionProdutos;
+            color: @colorH4;
+            border: none;
+        }
+    }
+
+}
+
+.roda-pe {
+    background-color: @colorH4;
+    height: 60px;
+
+    & .products {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+
+        &-item {
+            margin-top: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+
+
